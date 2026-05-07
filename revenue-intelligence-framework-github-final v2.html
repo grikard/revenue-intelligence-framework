@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workflow Economics — Revenue Intelligence Framework | Gary Rikard, MBA</title>
+
+<!-- Primary metadata -->
+<meta name="title" content="Workflow Economics — Revenue Intelligence Framework | Gary Rikard, MBA">
+<meta name="description" content="Board-ready four-tab framework for evaluating Revenue Intelligence across industries through amplification economics, token efficiency curves, workflow matrices, and capital allocation posture.">
+<meta name="author" content="Gary Rikard">
+<meta name="creator" content="Gary Rikard">
+<meta name="publisher" content="Gary Rikard">
+<meta name="keywords" content="Revenue Intelligence, Workflow Economics, Enterprise AI, Agentic AI, AI ROI, ROIC, capital allocation, Salesforce, Agentforce, Data Cloud, token efficiency, revenue amplification">
+<meta name="robots" content="index, follow">
+<meta name="language" content="en">
+<meta name="theme-color" content="#102B5C">
+<link rel="canonical" href="https://grikard.github.io/revenue-intelligence-framework/">
+
+<!-- Open Graph / LinkedIn / Substack link previews -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://grikard.github.io/revenue-intelligence-framework/">
+<meta property="og:title" content="Workflow Economics — Revenue Intelligence Framework | Gary Rikard">
+<meta property="og:description" content="Board-ready interactive framework for evaluating Revenue Intelligence across industries as revenue amplification, not labor displacement.">
+<meta property="og:site_name" content="Gary Rikard">
+<meta property="og:locale" content="en_US">
+
+<!-- X / Twitter preview metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Workflow Economics — Revenue Intelligence Framework | Gary Rikard">
+<meta name="twitter:description" content="Four-tab board-ready Revenue Intelligence framework for amplification economics, workflow posture, and capital allocation across industries.">
+
+<!-- Search-engine structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Workflow Economics — Revenue Intelligence Framework",
+  "headline": "Workflow Economics — Revenue Intelligence Framework",
+  "description": "Board-ready four-tab framework for evaluating Revenue Intelligence across industries through amplification economics, token efficiency curves, workflow matrices, and capital allocation posture.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "author": {
+    "@type": "Person",
+    "name": "Gary Rikard",
+    "sameAs": "https://www.linkedin.com/in/garyrikard"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Gary Rikard",
+    "sameAs": "https://www.linkedin.com/in/garyrikard"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Gary Rikard",
+    "sameAs": "https://www.linkedin.com/in/garyrikard"
+  },
+  "url": "https://grikard.github.io/revenue-intelligence-framework/",
+  "inLanguage": "en",
+  "datePublished": "2026-05-06",
+  "dateModified": "2026-05-06",
+  "keywords": [
+    "Revenue Intelligence",
+    "Workflow Economics",
+    "Enterprise AI",
+    "Agentic AI",
+    "ROIC",
+    "Capital Allocation",
+    "Token Efficiency"
+  ]
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<style>
+  :root {
+    --bg: #F3F1EC;
+    --surface: #FFFFFF;
+    --surface-2: #F7F5EF;
+    --border: rgba(17, 24, 39, 0.10);
+    --border-strong: rgba(17, 24, 39, 0.18);
+    --text: #111827;
+    --text-2: #4B5563;
+    --text-3: #7A7D85;
+    --navy: #102B5C;
+    --navy-2: #183B73;
+    --navy-3: #071A38;
+    --teal: #1D9E75;
+    --teal-dark: #0F6E56;
+    --blue: #378ADD;
+    --blue-dark: #185FA5;
+    --amber: #BA7517;
+    --amber-dark: #854F0B;
+    --purple: #7F77DD;
+    --purple-dark: #534AB7;
+    --coral: #D85A30;
+    --gray: #888780;
+    --red: #A32D2D;
+    --radius: 10px;
+    --radius-lg: 16px;
+    --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    --font-mono: "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(circle at top right, rgba(16,43,92,0.10), transparent 28rem),
+      var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    padding: 28px 18px;
+  }
+  .wrap {
+    max-width: 1160px;
+    margin: 0 auto;
+    background: var(--surface);
+    border: 1px solid rgba(17,24,39,.10);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 18px 45px rgba(17,24,39,.10);
+  }
+  header {
+    position: relative;
+    margin: 0;
+    padding: 30px 38px;
+    border-bottom: 0;
+    background:
+      radial-gradient(circle at 96% -20%, rgba(127,119,221,.32), transparent 14rem),
+      radial-gradient(circle at -3% 110%, rgba(29,158,117,.16), transparent 12rem),
+      linear-gradient(135deg, var(--navy-3), var(--navy));
+    overflow: hidden;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    right: -56px;
+    top: -78px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(127,119,221,.18);
+  }
+  .eyebrow {
+    position: relative;
+    z-index: 1;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: #9FB5D6;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-family: var(--font-mono);
+  }
+  h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+    font-weight: 650;
+    line-height: 1.18;
+    margin: 0 0 9px;
+    color: #FFFFFF;
+    letter-spacing: -0.02em;
+  }
+  .lede {
+    position: relative;
+    z-index: 1;
+    font-size: 15px;
+    color: #C6D2E2;
+    margin: 0;
+    max-width: 850px;
+    line-height: 1.6;
+  }
+
+  /* Tab navigation */
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    margin: 0 38px 2rem;
+    padding-top: 1.25rem;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .tab {
+    padding: 10px 12px;
+    font-size: 13px;
+    color: var(--text-2);
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+    margin-bottom: -0.5px;
+    transition: color 0.15s, border-color 0.15s;
+    text-align: center;
+  }
+  .tab:hover:not(.active) { color: var(--text); }
+  .tab.active { color: var(--navy); border-bottom-color: var(--navy); font-weight: 650; }
+
+  /* Panels */
+  .panel { display: none; padding: 0.5rem 38px 1.25rem; }
+  .panel.active { display: block; }
+
+  .label { font-size: 11px; letter-spacing: 0.09em; color: var(--text-2); text-transform: uppercase; margin: 0 0 12px; }
+  h2 { font-size: 19px; font-weight: 500; line-height: 1.35; margin: 0 0 8px; color: var(--text); }
+  .sub { font-size: 14px; color: var(--text-2); margin: 0 0 1.25rem; line-height: 1.6; }
+  svg { display: block; max-width: 100%; height: auto; }
+
+  /* Chart */
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 12px; color: var(--text-2); margin-bottom: 12px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-swatch { width: 14px; height: 2.5px; border-radius: 1px; display: inline-block; }
+  .chart-wrap { position: relative; width: 100%; height: 290px; }
+  .matrix-frame { width: 100%; overflow-x: auto; }
+
+  /* Industry selector */
+  .industry-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+    padding: 12px 14px;
+    background: var(--surface-2);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-lg);
+  }
+  .industry-bar label { font-size: 12px; color: var(--text-2); }
+  select {
+    flex: 1;
+    padding: 7px 10px;
+    border: 0.5px solid var(--border-strong);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  /* Metrics */
+  .metric { background: var(--surface-2); border-radius: var(--radius); padding: 14px 16px; }
+  .metric-label { font-size: 11px; letter-spacing: 0.04em; color: var(--text-2); margin-bottom: 6px; text-transform: uppercase; }
+  .metric-value { font-size: 20px; font-weight: 500; line-height: 1.1; color: var(--text); }
+  .metric-sub { font-size: 12px; color: var(--text-2); margin-top: 4px; }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 1.25rem; }
+
+  /* Sliders */
+  .slider-block { margin-bottom: 18px; }
+  .slider-row { display: flex; align-items: center; gap: 14px; margin-bottom: 4px; }
+  .slider-row label { font-size: 13px; color: var(--text); min-width: 200px; line-height: 1.4; font-weight: 500; }
+  input[type="range"] { flex: 1; -webkit-appearance: none; appearance: none; background: transparent; height: 18px; cursor: pointer; }
+  input[type="range"]::-webkit-slider-runnable-track { height: 4px; background: var(--border-strong); border-radius: 2px; }
+  input[type="range"]::-moz-range-track { height: 4px; background: var(--border-strong); border-radius: 2px; }
+  input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--text); margin-top: -7px; cursor: pointer; border: 0; }
+  input[type="range"]::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; background: var(--text); cursor: pointer; border: 0; }
+  .slider-val { font-size: 13px; font-weight: 500; min-width: 64px; text-align: right; font-family: var(--font-mono); color: var(--text); }
+  .slider-guide {
+    display: grid;
+    grid-template-columns: 200px 1fr 64px;
+    gap: 14px;
+    margin-top: 2px;
+  }
+  .slider-guide .empty {}
+  .guide-track {
+    display: flex;
+    font-size: 10.5px;
+    color: var(--text-3);
+    justify-content: space-between;
+    line-height: 1.3;
+    padding: 0 2px;
+  }
+  .guide-track span { flex: 1; text-align: center; }
+  .guide-track span:first-child { text-align: left; }
+  .guide-track span:last-child { text-align: right; }
+
+  .guidance { background: var(--surface-2); border-radius: var(--radius); padding: 14px 16px; margin-bottom: 1rem; }
+  .guidance .label { margin-bottom: 8px; }
+  .guidance-text { font-size: 13.5px; line-height: 1.6; color: var(--text); }
+
+  .presets { display: flex; gap: 8px; flex-wrap: wrap; }
+  .presets button { background: transparent; border: 0.5px solid var(--border-strong); border-radius: var(--radius); padding: 7px 13px; font-size: 13px; color: var(--text); cursor: pointer; font-family: inherit; transition: background 0.15s, border-color 0.15s; }
+  .presets button:hover { background: var(--surface-2); border-color: var(--text-3); }
+  .presets button:active { transform: scale(0.98); }
+  .presets button.active { background: var(--surface-2); border-color: var(--text); }
+
+  /* Two-column dimension layout (assessor) */
+  .dim-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 36px; margin-bottom: 1.5rem; }
+  .dim-section-label { font-size: 11px; letter-spacing: 0.09em; color: var(--text-2); text-transform: uppercase; margin: 0 0 12px; }
+  .dim-block { margin-bottom: 14px; }
+  .dim-name { font-size: 14px; font-weight: 600; color: var(--text); margin: 0 0 1px; }
+  .dim-desc { font-size: 12px; color: var(--text-2); margin: 0 0 10px; line-height: 1.45; }
+  .dim-row { display: grid; grid-template-columns: minmax(50px, auto) 1fr minmax(70px, auto) 24px; align-items: center; gap: 10px; }
+  .dim-end { font-size: 11px; color: var(--text-3); }
+  .dim-end.right { text-align: right; }
+  .dim-val { font-size: 16px; font-weight: 600; text-align: right; font-family: var(--font-mono); color: var(--text); }
+
+  /* Four-quadrant card grid (assessor) */
+  .quad-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 1.25rem; }
+  .quad-card { background: var(--surface-2); border: 1px solid transparent; border-radius: var(--radius-lg); padding: 14px 14px 12px; transition: border-color 0.2s, background 0.2s; }
+  .quad-card.active { background: var(--surface); border-color: var(--text); box-shadow: 0 4px 16px rgba(17,24,39,.08); }
+  .quad-card .quad-name { font-size: 13px; font-weight: 700; letter-spacing: 0.03em; margin: 0 0 4px; }
+  .quad-card .quad-coord { font-size: 11px; color: var(--text-3); margin: 0 0 8px; font-style: italic; }
+  .quad-card .quad-text { font-size: 12px; line-height: 1.5; color: var(--text-2); margin: 0 0 10px; }
+  .quad-card .quad-roic { font-size: 11px; font-weight: 600; }
+  .quad-card.q-automate .quad-name, .quad-card.q-automate .quad-roic { color: var(--purple-dark); }
+  .quad-card.q-build    .quad-name, .quad-card.q-build    .quad-roic { color: var(--amber-dark); }
+  .quad-card.q-sequence .quad-name, .quad-card.q-sequence .quad-roic { color: var(--teal-dark); }
+  .quad-card.q-protect  .quad-name, .quad-card.q-protect  .quad-roic { color: var(--text-2); }
+
+  /* Score summary row */
+  .score-summary { display: grid; grid-template-columns: 130px 130px 1fr; gap: 24px; padding: 20px 24px; background: var(--surface-2); border-radius: var(--radius-lg); margin-bottom: 1rem; align-items: start; }
+  .score-cell .score-label { font-size: 11px; letter-spacing: 0.09em; color: var(--text-2); text-transform: uppercase; margin: 0 0 6px; }
+  .score-cell .score-value { font-size: 38px; font-weight: 600; line-height: 1; color: var(--text); font-family: var(--font-mono); }
+  .score-cell .score-of { font-size: 13px; color: var(--text-3); margin-left: 2px; }
+  .decision-cell .score-label { font-size: 11px; letter-spacing: 0.09em; color: var(--text-2); text-transform: uppercase; margin: 0 0 6px; }
+  .decision-cell .decision-name { font-size: 18px; font-weight: 700; color: var(--text); margin: 0 0 8px; }
+  .decision-cell .decision-text { font-size: 13px; line-height: 1.6; color: var(--text); margin: 0; }
+
+  /* Deployment window note */
+  .window-note { font-size: 12px; line-height: 1.6; color: var(--text-2); padding: 12px 16px; background: var(--surface-2); border-left: 3px solid var(--navy); border-radius: 0 var(--radius) var(--radius) 0; margin-bottom: 1.25rem; }
+  .window-note strong { color: var(--text); font-weight: 600; }
+
+  footer {
+    margin-top: 1.5rem;
+    padding: 16px 38px;
+    border-top: 0.5px solid var(--border);
+    background: #F7F5EF;
+    font-size: 12px;
+    color: var(--text-3);
+    line-height: 1.6;
+  }
+  footer p { margin: 0 0 6px; }
+  .citation { font-style: italic; }
+
+  .author-link { color: var(--text-2); text-decoration: underline; text-underline-offset: 2px; }
+  .artifact-note { margin-top: 6px; }
+  .mobile-scroll-note { display: none; font-size: 11px; color: var(--text-3); margin: 6px 0 0; font-style: italic; }
+
+  @media (max-width: 760px) {
+    body { padding: 12px; }
+    .wrap { border-radius: 18px; }
+    header { padding: 24px 20px; }
+    h1 { font-size: 25px; }
+    .tabs { display:flex; overflow-x:auto; margin-left: 20px; margin-right: 20px; padding-top: 1rem; }
+    .tab { padding-left: 11px; padding-right: 11px; font-size: 12px; text-align:left; }
+    .panel { padding-left: 20px; padding-right: 20px; }
+    footer { padding-left: 20px; padding-right: 20px; }
+    .slider-row { display: grid; grid-template-columns: 1fr; gap: 6px; }
+    .slider-row label, .slider-val { min-width: 0; text-align: left; }
+    .slider-guide { display: none; }
+    .industry-bar { align-items: stretch; flex-direction: column; }
+    .panel svg { min-width: 720px; }
+    .panel { overflow-x: visible; }
+    .matrix-frame { overflow-x: auto; }
+    .mobile-scroll-note { display: block; }
+    .dim-grid { grid-template-columns: 1fr; gap: 0; }
+    .quad-grid { grid-template-columns: 1fr 1fr; }
+    .score-summary { grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px; }
+    .decision-cell { grid-column: span 2; }
+  }
+
+
+  .dot-group { cursor: pointer; }
+  .dot-group:hover circle { stroke: var(--text); stroke-width: 1.5; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Workflow economics — revenue intelligence</p>
+  <h1>Revenue Intelligence Amplification Framework</h1>
+  <p class="lede">A board-ready framework for evaluating Revenue Intelligence across industries. The model treats AI as a revenue-amplification system, not a labor-replacement system, and tests whether each workflow clears a WACC-adjusted ROIC hurdle.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Revenue Intelligence framework panels">
+  <button class="tab active" data-tab="eq" role="tab" aria-selected="true" aria-controls="panel-eq">1 · The amplification equation</button>
+  <button class="tab" data-tab="curves" role="tab" aria-selected="false" aria-controls="panel-curves">2 · Three scaling regimes</button>
+  <button class="tab" data-tab="matrix" role="tab" aria-selected="false" aria-controls="panel-matrix">3 · Decision matrix</button>
+  <button class="tab" data-tab="assessor" role="tab" aria-selected="false" aria-controls="panel-assessor">4 · Workflow assessor</button>
+</div>
+
+<!-- ============= PANEL 1: EQUATION ============= -->
+<section class="panel active" id="panel-eq" role="tabpanel">
+  <p class="label">Panel 1 of 4 — the amplification equation</p>
+  <h2>Revenue intelligence amplifies; it does not displace</h2>
+  <p class="sub">Cost-side workflows cross when AI execution plus error penalty falls below human baseline cost. Revenue-side workflows cross when the lift from AI guidance, multiplied by opportunity volume and conversion probability, clears the WACC-adjusted hurdle rate net of misguidance cost. Variables in green move in favor of investment. Variables in amber are the risk side.</p>
+
+  <svg width="100%" viewBox="0 0 920 380" role="img" aria-label="The amplification equation. Fidelity times revenue opportunity divided by program cost plus misguidance penalty must exceed the WACC-adjusted hurdle rate, typically two times.">
+    <title>Revenue Intelligence amplification equation</title>
+    <desc>Revenue Intelligence crosses the hurdle when fidelity times revenue opportunity divided by program cost plus misguidance penalty exceeds the WACC-adjusted ROIC hurdle.</desc>
+
+    <text x="260" y="62" text-anchor="middle" font-size="11" fill="var(--teal-dark)" font-style="italic" letter-spacing=".05em">↑ RISING — algorithmic curve + integration</text>
+    <text x="260" y="92" text-anchor="middle" font-size="27" fill="var(--teal-dark)">Fidelity</text>
+    <text x="260" y="115" text-anchor="middle" font-size="13" fill="var(--text-2)" font-style="italic">guidance relevance × accuracy</text>
+
+    <text x="420" y="92" text-anchor="middle" font-size="24" fill="var(--text-2)">×</text>
+
+    <text x="590" y="62" text-anchor="middle" font-size="11" fill="var(--teal-dark)" font-style="italic" letter-spacing=".05em">→ STRUCTURAL — set by market and motion</text>
+    <text x="590" y="92" text-anchor="middle" font-size="27" fill="var(--teal-dark)">Revenue opportunity</text>
+    <text x="590" y="115" text-anchor="middle" font-size="13" fill="var(--text-2)" font-style="italic">pipeline × deal value × conversion</text>
+
+    <line x1="150" y1="138" x2="720" y2="138" stroke="var(--text)" stroke-width="2.1"/>
+
+    <text x="265" y="170" text-anchor="middle" font-size="11" fill="var(--amber-dark)" font-style="italic" letter-spacing=".05em">↓ FALLING — token efficiency curve, ~10×/12–18mo</text>
+    <text x="265" y="200" text-anchor="middle" font-size="27" fill="var(--amber-dark)">Program cost</text>
+    <text x="265" y="223" text-anchor="middle" font-size="13" fill="var(--text-2)" font-style="italic">AI + implementation + change mgmt</text>
+
+    <text x="420" y="200" text-anchor="middle" font-size="24" fill="var(--text-2)">+</text>
+
+    <text x="600" y="170" text-anchor="middle" font-size="11" fill="var(--amber-dark)" font-style="italic" letter-spacing=".05em">↓ FALLING with semantic integration depth</text>
+    <text x="600" y="200" text-anchor="middle" font-size="27" fill="var(--amber-dark)">Misguidance penalty</text>
+    <text x="600" y="223" text-anchor="middle" font-size="13" fill="var(--text-2)" font-style="italic">error rate × cost of wrong action</text>
+
+    <text x="748" y="166" font-size="34" fill="var(--text)" font-weight="600">&gt;</text>
+    <text x="790" y="166" font-size="34" fill="var(--text)" font-weight="600">2.0×</text>
+    <text x="790" y="195" font-size="16" fill="var(--text-2)" font-style="italic">WACC-adjusted</text>
+    <text x="790" y="216" font-size="16" fill="var(--text-2)" font-style="italic">ROIC hurdle</text>
+
+    <text x="460" y="302" text-anchor="middle" font-size="17" fill="var(--text-2)">Cost-side displacement crosses at 1.0. Revenue-side amplification must clear a hurdle —</text>
+    <text x="460" y="328" text-anchor="middle" font-size="19" fill="var(--text)" font-weight="600">break-even is not enough; capital allocation requires risk-adjusted return.</text>
+    <text x="460" y="354" text-anchor="middle" font-size="13" fill="var(--text-3)" font-style="italic">Revenue intelligence is an amplification equation, not a labor-replacement equation.</text>
+  </svg>
+</section>
+
+<!-- ============= PANEL 2: CURVES ============= -->
+<section class="panel" id="panel-curves" role="tabpanel">
+  <p class="label">Panel 2 of 4 — three scaling regimes</p>
+  <h2>Compute economics now run on three curves, not one</h2>
+  <p class="sub">Token cost efficiency improves roughly 10× every 12–18 months — orders of magnitude faster than Moore's Law ever delivered. For revenue intelligence specifically, the implication is that the cost of generating high-fidelity guidance per opportunity is collapsing faster than the cost of generating the opportunity itself. The amplification ratio improves on the cost denominator before it improves on the revenue numerator.</p>
+
+  <div class="legend">
+    <span class="legend-item"><span class="legend-swatch" style="background: var(--teal)"></span>Token cost efficiency</span>
+    <span class="legend-item"><span class="legend-swatch" style="background: var(--blue)"></span>GPU AI performance</span>
+    <span class="legend-item"><span class="legend-swatch" style="height: 0; border-top: 1.5px dashed var(--gray)"></span>Moore's Law</span>
+  </div>
+
+  <div class="chart-wrap">
+    <canvas id="curves-chart" role="img" aria-label="Logarithmic chart from 2022 to 2028. Token cost efficiency rises from 1x baseline to 4000x. GPU AI performance reaches 350x. Moore's Law reaches 8x."></canvas>
+  </div>
+  <p style="font-size:11.5px;color:var(--text-2);margin:12px 0 0;font-style:italic;line-height:1.55">Index: 2022 = 1.0 baseline · log scale · 2026 onward projected. Sources: synthesis of frontier model pricing trajectories, NVIDIA datasheets, and historical CMOS scaling.</p>
+</section>
+
+<!-- ============= PANEL 3: MATRIX ============= -->
+<section class="panel" id="panel-matrix" role="tabpanel">
+  <p class="label">Panel 3 of 4 — the decision matrix</p>
+  <h2>Two axes — signal threshold and position on the token efficiency curve — yield four capital postures</h2>
+  <p class="sub">Each dot is a representative revenue intelligence workflow placed by where its signal-to-noise threshold sits today and how soon AI economics cross the hurdle rate. The slope of the threshold curve is the analytical point: high-judgment workflows require disproportionately more progress before amplification clears the hurdle. Click any workflow to read its capital allocation logic. Switch industries to see how the same framework places vertical-specific workflows.</p><p class="mobile-scroll-note">On mobile, swipe horizontally to view the full matrix.</p>
+
+  <div class="industry-bar">
+    <label for="industry-select">Industry view</label>
+    <select id="industry-select">
+      <option value="cross">Cross-industry overview (default)</option>
+      <option value="wealth">Wealth management</option>
+      <option value="insurance">Insurance</option>
+      <option value="medtech">Medtech</option>
+      <option value="pharma">Pharma</option>
+      <option value="payer">Health payer</option>
+      <option value="cpg">Consumer goods manufacturing</option>
+      <option value="media">Media</option>
+      <option value="hightech">High tech</option>
+    </select>
+  </div>
+
+  <div class="matrix-frame">
+  <svg width="100%" viewBox="0 0 760 540" role="img" aria-label="Decision matrix with signal threshold on the vertical axis and position on the token efficiency curve on the horizontal axis. Workflows mapped across four quadrants: Protect and Invest, Build and Defend, Sequence Next, and Automate Now." style="min-width:760px">
+    <rect x="80" y="40" width="270" height="200" fill="#FAEEDA" opacity="0.45"/>
+    <rect x="350" y="40" width="270" height="200" fill="#E6F1FB" opacity="0.55"/>
+    <rect x="80" y="240" width="270" height="200" fill="#E1F5EE" opacity="0.55"/>
+    <rect x="350" y="240" width="270" height="200" fill="#EEEDFE" opacity="0.55"/>
+
+    <text x="98" y="62" font-size="14" font-weight="700" fill="var(--amber-dark)" letter-spacing=".05em">PROTECT &amp; INVEST</text>
+    <text x="98" y="80" font-size="11" fill="var(--amber-dark)" font-style="italic">36+ months · deepen the data moat</text>
+    <text x="368" y="62" font-size="14" font-weight="700" fill="var(--blue-dark)" letter-spacing=".05em">BUILD &amp; DEFEND</text>
+    <text x="368" y="80" font-size="11" fill="var(--blue-dark)" font-style="italic">24–48 months · proprietary signal</text>
+    <text x="98" y="262" font-size="14" font-weight="700" fill="var(--teal-dark)" letter-spacing=".05em">SEQUENCE NEXT</text>
+    <text x="98" y="280" font-size="11" fill="var(--teal-dark)" font-style="italic">12–24 months · prepare infrastructure</text>
+    <text x="368" y="262" font-size="14" font-weight="700" fill="var(--purple-dark)" letter-spacing=".05em">AUTOMATE NOW</text>
+    <text x="368" y="280" font-size="11" fill="var(--purple-dark)" font-style="italic">0–6 months · capture lift</text>
+
+    <line x1="80" y1="40" x2="80" y2="440" stroke="var(--text-2)" stroke-width="0.5"/>
+    <line x1="80" y1="440" x2="620" y2="440" stroke="var(--text-2)" stroke-width="0.5"/>
+    <line x1="350" y1="40" x2="350" y2="440" stroke="var(--text-2)" stroke-width="0.5" stroke-dasharray="3 3"/>
+    <line x1="80" y1="240" x2="620" y2="240" stroke="var(--text-2)" stroke-width="0.5" stroke-dasharray="3 3"/>
+
+    <path d="M 100 60 Q 350 340 600 430" fill="none" stroke="var(--red)" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.65"/>
+    <text x="540" y="395" font-size="10.5" fill="var(--red)" font-style="italic">hurdle frontier</text>
+
+    <g id="matrix-dots"></g>
+
+    <text x="80" y="475" font-size="11" fill="var(--text-2)">far from hurdle</text>
+    <text x="620" y="475" font-size="11" fill="var(--text-2)" text-anchor="end">above ROIC hurdle</text>
+    <text x="350" y="495" font-size="11" font-weight="500" fill="var(--text)" text-anchor="middle">Position on token efficiency curve →</text>
+
+    <text x="40" y="240" font-size="11" font-weight="500" fill="var(--text)" text-anchor="middle" transform="rotate(-90 40 240)">← Signal threshold of workflow</text>
+    <text x="62" y="60" font-size="11" fill="var(--text-2)" text-anchor="end" transform="rotate(-90 62 60)">high</text>
+    <text x="62" y="438" font-size="11" fill="var(--text-2)" text-anchor="end" transform="rotate(-90 62 438)">low</text>
+  </svg>
+  </div>
+
+  <div class="guidance" id="dot-info" style="margin-top:1rem">
+    <p class="label" id="dot-title">Click a workflow above</p>
+    <div class="guidance-text" id="dot-body">Each workflow is placed by its signal threshold (vertical axis) and how close current AI economics sit to its hurdle rate (horizontal axis). Switch industries above to see how the same framework places vertical-specific revenue intelligence workflows.</div>
+  </div>
+</section>
+
+<!-- ============= PANEL 4: ASSESSOR ============= -->
+<section class="panel" id="panel-assessor" role="tabpanel">
+  <p class="label">Panel 4 of 4 — workflow assessor</p>
+  <h2>Score a workflow on four dimensions to place it on the matrix</h2>
+  <p class="sub">Two dimensions on the left determine the <strong>signal threshold</strong> — how much cognitive fidelity the workflow requires. Two on the right determine <strong>token efficiency proximity</strong> — how close current AI economics sit to clearing the hurdle for this specific workflow. The four scores combine into a quadrant placement and a capital allocation decision.</p>
+
+  <div class="dim-grid">
+    <div>
+      <p class="dim-section-label">Signal threshold dimensions</p>
+
+      <div class="dim-block">
+        <p class="dim-name">Judgment complexity</p>
+        <p class="dim-desc">How nuanced is the reasoning the workflow requires?</p>
+        <div class="dim-row">
+          <span class="dim-end">Routine</span>
+          <input type="range" id="s-judgment" min="1" max="5" value="3" step="1">
+          <span class="dim-end right">Expert only</span>
+          <span class="dim-val" id="v-judgment">3</span>
+        </div>
+      </div>
+
+      <div class="dim-block">
+        <p class="dim-name">Error consequence</p>
+        <p class="dim-desc">Cost of acting on a wrong recommendation in this workflow.</p>
+        <div class="dim-row">
+          <span class="dim-end">Trivial</span>
+          <input type="range" id="s-error" min="1" max="5" value="3" step="1">
+          <span class="dim-end right">Catastrophic</span>
+          <span class="dim-val" id="v-error">3</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p class="dim-section-label">Token efficiency dimensions</p>
+
+      <div class="dim-block">
+        <p class="dim-name">AI capability today</p>
+        <p class="dim-desc">How well current AI handles this specific task — given models, proprietary data, and integration depth.</p>
+        <div class="dim-row">
+          <span class="dim-end">Nascent</span>
+          <input type="range" id="s-capability" min="1" max="5" value="3" step="1">
+          <span class="dim-end right">Expert-level</span>
+          <span class="dim-val" id="v-capability">3</span>
+        </div>
+      </div>
+
+      <div class="dim-block">
+        <p class="dim-name">Unit economics today</p>
+        <p class="dim-desc">AI cost per decision versus the value created per decision.</p>
+        <div class="dim-row">
+          <span class="dim-end">Unfavorable</span>
+          <input type="range" id="s-economics" min="1" max="5" value="3" step="1">
+          <span class="dim-end right">Favorable</span>
+          <span class="dim-val" id="v-economics">3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="quad-grid">
+    <div class="quad-card q-automate" id="quad-automate">
+      <p class="quad-name">Automate now</p>
+      <p class="quad-coord">Low signal · High proximity</p>
+      <p class="quad-text">Deploy agents immediately. Track adoption and conversion lift, not just throughput. Reinvest into governance.</p>
+      <p class="quad-roic">Capital deployment window: 0–6 months</p>
+    </div>
+    <div class="quad-card q-build" id="quad-build">
+      <p class="quad-name">Build &amp; defend</p>
+      <p class="quad-coord">High signal · High proximity</p>
+      <p class="quad-text">AI is approaching your threshold. Invest now in proprietary data and semantic integration. Build governance ahead of capability.</p>
+      <p class="quad-roic">Capital deployment window: 24–48 months</p>
+    </div>
+    <div class="quad-card q-sequence" id="quad-sequence">
+      <p class="quad-name">Sequence next</p>
+      <p class="quad-coord">Low signal · Low proximity</p>
+      <p class="quad-text">Capability arrives in 12–24 months. Pre-position the substrate now — standardize the workflow, begin vendor evaluation, build integration scaffolding. Preparation work, not waiting.</p>
+      <p class="quad-roic">Capital deployment window: 12–24 months</p>
+    </div>
+    <div class="quad-card q-protect" id="quad-protect">
+      <p class="quad-name">Protect &amp; invest</p>
+      <p class="quad-coord">High signal · Low proximity</p>
+      <p class="quad-text">Far from the hurdle. Deepen domain expertise and identify the proprietary data assets in this workflow.</p>
+      <p class="quad-roic">Capital deployment window: 36+ months</p>
+    </div>
+  </div>
+
+  <div class="score-summary">
+    <div class="score-cell">
+      <p class="score-label">Signal score</p>
+      <p class="score-value"><span id="s-score">60</span><span class="score-of">/100</span></p>
+    </div>
+    <div class="score-cell">
+      <p class="score-label">Proximity score</p>
+      <p class="score-value"><span id="p-score">60</span><span class="score-of">/100</span></p>
+    </div>
+    <div class="decision-cell">
+      <p class="score-label">Capital allocation decision</p>
+      <p class="decision-name" id="decision-name">Build &amp; defend</p>
+      <p class="decision-text" id="decision-text">Amplification capability is approaching this signal threshold. Capital priority is the proprietary substrate — deal data, customer context, semantic integration — that lifts fidelity and dampens misguidance. Build the seller adoption infrastructure now so amplification capture starts the day capability lands.</p>
+    </div>
+  </div>
+
+  <div class="window-note">
+    <strong>How to read the deployment window.</strong> The window is when capability and economics are favorable enough to deploy this workflow with confidence — it is <em>not</em> a payback period. For Build &amp; Defend at 24–48 months, the capital you allocate <em>now</em> (proprietary data, semantic integration, seller adoption infrastructure) is what lets you capture amplification the day capability lands. The window is a <em>readiness</em> timeline, not a payback timeline.
+  </div>
+
+  <p class="label" style="margin-top: 1rem">Try a preset workflow</p>
+  <div class="presets">
+    <button onclick="loadPreset('activity', this)">Activity logging</button>
+    <button onclick="loadPreset('lead', this)">Lead scoring</button>
+    <button onclick="loadPreset('invoice', this)">Invoice generation</button>
+    <button onclick="loadPreset('txnquote', this)">Transactional quoting</button>
+    <button onclick="loadPreset('convo', this)">Conversation intelligence</button>
+    <button onclick="loadPreset('health', this)">Customer health / NRR</button>
+    <button onclick="loadPreset('subbill', this)">Subscription billing</button>
+    <button onclick="loadPreset('forecast', this)">Pipeline forecast</button>
+    <button onclick="loadPreset('nba', this)">Next-best-action</button>
+    <button onclick="loadPreset('proccpq', this)">Procedural CPQ</button>
+    <button onclick="loadPreset('declcpq', this)">Declarative CPQ</button>
+    <button onclick="loadPreset('subrenew', this)">Subscription renewal</button>
+    <button onclick="loadPreset('leakage', this)">Revenue leakage detection</button>
+    <button onclick="loadPreset('dealprice', this)">Deal pricing &amp; margin</button>
+    <button onclick="loadPreset('strategy', this)">Strategic account play</button>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Gary Rikard, MBA</strong> · Workflow Economics series · Revenue Intelligence Framework · <a class="author-link" href="https://www.linkedin.com/in/garyrikard" target="_blank" rel="noopener noreferrer">LinkedIn: garyrikard</a></p>
+  <p class="citation">Synthesis of Kim, Kim, and Koning (INSEAD/HBS, 2026), McKinsey Global Tech Agenda 2026, frontier model pricing trajectories, and the Workflow Economics artifact system.</p>
+  <p>The amplification ratio is a conceptual orientation device. Real capital allocation decisions require NPV analysis with WACC, implementation cost inputs, and production-measured fidelity and adoption rates.</p>
+  <p class="artifact-note">Companion artifacts: <a class="author-link" href="https://garyrikard.substack.com/p/the-revenue-intelligence-imperative" target="_blank" rel="noopener noreferrer">The Revenue Intelligence Imperative</a> · <a class="author-link" href="https://grikard.github.io/token-efficiency-framework/">Token Efficiency Framework</a> · <a class="author-link" href="https://grikard.github.io/revenue-intelligence-calculator/">Revenue Intelligence Economic Multiplier</a></p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+
+  // ---------- Tab navigation ----------
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+  let chartInitialized = false;
+  tabs.forEach(t => {
+    t.addEventListener('click', () => {
+      const target = t.getAttribute('data-tab');
+      tabs.forEach(x => {
+        const active = x === t;
+        x.classList.toggle('active', active);
+        x.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
+      panels.forEach(p => p.classList.toggle('active', p.id === 'panel-' + target));
+      if (target === 'curves' && !chartInitialized) { initChart(); chartInitialized = true; }
+      setTimeout(() => {
+        if (window.Chart) {
+          Object.values(Chart.instances || {}).forEach(chart => chart.resize && chart.resize());
+        }
+      }, 50);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // ---------- Three scaling regimes chart (lazy init) ----------
+  function initChart() {
+    const grid = 'rgba(0,0,0,.05)';
+    const tick = '#5F5E5A';
+    new Chart(document.getElementById('curves-chart'), {
+      type: 'line',
+      data: {
+        labels: ['2022','2023','2024','2025','2026','2027*','2028*'],
+        datasets: [
+          { label:'Token cost efficiency', data:[1,5,25,120,500,1500,4000], borderColor:'#1D9E75', borderWidth:2.5, tension:.35, pointRadius:4, pointBackgroundColor:'#1D9E75', fill:false },
+          { label:'GPU AI performance', data:[1,3.3,9,30,80,180,350], borderColor:'#378ADD', borderWidth:2, tension:.35, pointRadius:4, pointBackgroundColor:'#378ADD', fill:false },
+          { label:"Moore's Law", data:[1,1.4,2,2.8,4,5.6,8], borderColor:'#888780', borderWidth:1.5, borderDash:[5,4], tension:.3, pointRadius:3, pointBackgroundColor:'#888780', fill:false }
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { color: grid }, ticks: { color: tick, font: { size: 12 } } },
+          y: {
+            type: 'logarithmic',
+            grid: { color: grid },
+            ticks: { color: tick, font: { size: 11 }, callback: v => v >= 1000 ? (v/1000)+'K×' : v+'×' },
+            title: { display: true, text: 'Performance index (log scale, 2022 = 1×)', color: tick, font: { size: 11 } }
+          }
+        }
+      }
+    });
+  }
+
+  // ---------- Industry workflows ----------
+  // Quadrants by color:
+  //   amber  — Protect & Invest (upper-left)
+  //   blue   — Build & Defend (upper-right)
+  //   teal   — Sequence Next (lower-left)
+  //   purple — Automate Now (lower-right)
+  // anchor: 'start' (label to right of dot) or 'end' (label to left of dot)
+  const industries = {
+    cross: {
+      name: 'Cross-industry revenue intelligence',
+      workflows: [
+        // Automate Now — 5 workflows
+        { name:'Activity logging',               x:580, y:290, color:'var(--purple)', anchor:'end',   body:'Pure transactional capture. Below the hurdle. Native CRM-attached AI executes this for fractions of a cent per logged event.' },
+        { name:'Lead scoring & routing',         x:430, y:320, color:'var(--purple)', anchor:'start', body:'High-volume, low-judgment, structured CRM signal. Below the hurdle on virtually any architecture. The capital allocation question is sequencing across instances, not whether to amplify.' },
+        { name:'Account research briefings',     x:570, y:350, color:'var(--purple)', anchor:'end',   body:'Cross-source synthesis of news, financials, contacts, history. High volume, structured outputs, low error consequence. Below the hurdle today on integrated platforms.' },
+        { name:'Meeting summarization',          x:400, y:380, color:'var(--purple)', anchor:'start', body:'Capability has crossed the hurdle on integrated platforms. Adoption depends on sellers trusting summary fidelity. Already economic on Salesforce, Gong-class, Microsoft Sales Copilot deployments.' },
+        { name:'Invoice generation',             x:565, y:410, color:'var(--purple)', anchor:'end',   body:'Rule-bound, transactional, well-bounded. Below the hurdle on integrated billing platforms with clean data substrate. The capital allocation question is sequencing across instances and standardizing the data substrate.' },
+        // Sequence Next — 4 workflows
+        { name:'Transactional quoting',          x:220, y:285, color:'var(--teal)',   anchor:'start', body:'Single-product or simple-bundle quoting. Rule-bound configuration with clear pricing logic. Capability is arriving on integrated CPQ + AI platforms; this workflow will move toward Automate Now within 12–18 months for standardized motions. Distinct from configurable CPQ migration, which is Build & Defend.' },
+        { name:'Conversation intelligence',      x:185, y:325, color:'var(--teal)',   anchor:'start', body:'Talk-track analysis, deal coaching signals, competitor mention detection. Sequence platforms where the call corpus integrates with CRM context — the moat is in the integrated data, not the model.' },
+        { name:'Customer health / NRR',          x:170, y:365, color:'var(--teal)',   anchor:'start', body:'Synthesis across product usage, support tickets, executive engagement, and renewal signals. Sequence platforms with the integrated data substrate; high amplification on net revenue retention.' },
+        { name:'Subscription billing',           x:220, y:400, color:'var(--teal)',   anchor:'start', body:'Usage-based metering, ramped contract escalation, true-ups, mid-term amendments. Capability is arriving on modern revenue management platforms. Sequence the integrated billing substrate now; this workflow moves toward Automate Now within 12–18 months for standardized motions.' },
+        // Build & Defend — 6 workflows
+        { name:'Pipeline forecast accuracy',     x:475, y:80,  color:'var(--blue)',   anchor:'start', body:'High-judgment, high-error-cost, multi-stakeholder. Path to clearing the hurdle runs through fidelity improvement (proprietary deal data, semantic integration) — not through cheaper inference.' },
+        { name:'Next-best-action recommendation',x:575, y:115, color:'var(--blue)',   anchor:'end',   body:'The flagship revenue intelligence workflow. Adoption is the binding constraint — sellers must trust the guidance. Semantic integration with CRM is decisive.' },
+        { name:'Configurable CPQ migration',     x:385, y:150, color:'var(--blue)',   anchor:'start', body:'Migration from procedural rule-based CPQ to modern revenue management architecture. Multi-product bundling, consumption-vs-seat economics, ramped revenue, mid-term amendments. The flagship Build & Defend workflow for enterprise SaaS — capital priority is the proprietary deal data and contract-history substrate. The architectural choice between procedural rule engines and declarative constraint solvers is itself capital allocation: declarative architectures handle combinatorial complexity natively but require greater substrate investment upfront.' },
+        { name:'Subscription renewal management',x:560, y:180, color:'var(--blue)',   anchor:'end',   body:'The strategic core of subscription revenue motions. Multi-product, multi-stakeholder, longitudinal context required. Path to clearing the hurdle runs through proprietary deal data integrated with consumption telemetry and customer success signals — not through cheaper inference. Build the integrated renewal substrate; the moat is the closed-renewal corpus.' },
+        { name:'Revenue leakage detection',      x:385, y:210, color:'var(--blue)',   anchor:'start', body:'Pattern recognition across contract terms, billing data, consumption metering, and amendment history. Identifies systematic under-billing on ramped commitments, missed escalators, consumption tier breaches, and amendment processing errors. The amplification economics depend on the integrated billing-and-deal-data substrate. High signal threshold, high error consequence — material EBITDA contribution at scale.' },
+        { name:'Deal pricing & margin',          x:570, y:235, color:'var(--blue)',   anchor:'end',   body:'Real-time deal-level pricing recommendation, informed by historical price-response data, competitive context, deal economics, and margin floor logic. Strong correlation to EBITDA — pricing is the highest-leverage workflow in revenue intelligence per dollar of capital allocated. Build & Defend; the moat is the proprietary pricing-and-deal-outcome corpus.' },
+        // Protect & Invest — 2 workflows
+        { name:'Strategic account play',         x:180, y:110, color:'var(--amber)',  anchor:'start', body:'Far from the hurdle. The token efficiency curve has not yet reached this signal threshold. Maintain seller investment; build the data substrate that AI will eventually operate on.' },
+        { name:'Pricing strategy',               x:245, y:175, color:'var(--amber)',  anchor:'start', body:'Strategic pricing decisions across markets, segments, and product lifecycle. Adversarial, high-stakes, irreducibly judgment-intensive. Strong correlation to EBITDA. The strategic core stays human; capital goes into the pricing data infrastructure that operational deal pricing leverages — making this Protect & Invest the gating substrate for the Build & Defend workflow that follows.' }
+      ]
+    },
+    wealth: {
+      name: 'Wealth management',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Trigger event detection',        x:570, y:290, color:'var(--purple)', anchor:'end',   body:'Life events, liquidity events, market triggers. High volume, structured, below the hurdle. PenFed-class deployments illustrate the economics.' },
+        { name:'Lead-to-advisor routing',        x:420, y:320, color:'var(--purple)', anchor:'start', body:'Match prospect profile to advisor specialty. Structured matching problem; CRM-native AI handles this below the hurdle.' },
+        { name:'Held-away asset alerting',       x:550, y:360, color:'var(--purple)', anchor:'end',   body:'Account aggregation feeds surface held-away balances eligible for consolidation. Below the hurdle when aggregation data is in place.' },
+        { name:'Standard rebalancing alerts',    x:400, y:400, color:'var(--purple)', anchor:'start', body:'Drift-from-target detection across portfolios. Structured rule application. Below the hurdle today on platforms with portfolio data substrate.' },
+        // Sequence Next — 3 workflows
+        { name:'Cross-sell / consolidation prep',x:200, y:290, color:'var(--teal)',   anchor:'start', body:'Pattern recognition across account aggregation feeds. Sequence platforms with the data substrate already in place; the moat is in held-away coverage.' },
+        { name:'AUM outflow / churn prediction', x:280, y:340, color:'var(--teal)',   anchor:'start', body:'Pattern recognition across engagement, performance, and life-event signals. Sequence platforms that integrate the score with advisor outreach workflow — the score is only as useful as the action it triggers.' },
+        { name:'Onboarding compliance',          x:180, y:395, color:'var(--teal)',   anchor:'start', body:'KYC, AML, suitability documentation. Structured but regulated. Sequence vendors that can demonstrate audit trails inside the system of record.' },
+        // Build & Defend — 3 workflows
+        { name:'Client review prep (Henderson)', x:475, y:105, color:'var(--blue)',   anchor:'start', body:'High-judgment, multi-system, fiduciary error cost. Build & Defend on a fragmented stack; Automate Now on FSC + Data Cloud + Atlas with native semantic context.' },
+        { name:'Suitability assessment',         x:560, y:155, color:'var(--blue)',   anchor:'end',   body:'Regulated, judgment-intensive, error cost is regulatory. Path to clearing the hurdle runs through proprietary client context — risk tolerance, holdings, life stage — delivered as one coherent read.' },
+        { name:'Tax-aware rebalancing',          x:395, y:205, color:'var(--blue)',   anchor:'start', body:'Tax-lot precision, harvest-loss logic, asset-location decisions. The amplification economics depend on portfolio data quality and tax-lot capture.' },
+        // Protect & Invest — 2 workflows
+        { name:'Investment thesis development',  x:180, y:110, color:'var(--amber)',  anchor:'start', body:'Strategic, irreducibly judgment-intensive. Maintain advisor investment in research depth. The data substrate (research, market data, client objectives) is what AI will eventually augment.' },
+        { name:'Estate planning advisory',       x:245, y:175, color:'var(--amber)',  anchor:'start', body:'Long-cycle, multi-generational, legally complex. Capital goes into the proprietary substrate — family relationship data, document corpora — not into the workflow itself.' }
+      ]
+    },
+    insurance: {
+      name: 'Insurance',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Quote generation (standard)',    x:450, y:290, color:'var(--purple)', anchor:'start', body:'Structured rating, well-bounded inputs. Below the hurdle on integrated platforms. Adoption is decisive: brokers and agents need the workflow inside their existing system.' },
+        { name:'Renewal recommendation',         x:560, y:320, color:'var(--purple)', anchor:'end',   body:'Pattern recognition across policy/claim history. Below the hurdle. Net retention impact is meaningful.' },
+        { name:'FNOL triage',                    x:420, y:360, color:'var(--purple)', anchor:'start', body:'First-notice-of-loss intake, severity scoring, routing. Structured intake, repeatable patterns. Below the hurdle on integrated claim platforms.' },
+        { name:'Document classification',        x:550, y:400, color:'var(--purple)', anchor:'end',   body:'Policy docs, certificates, loss runs, medical records. High volume, well-bounded categorization. Below the hurdle today.' },
+        // Sequence Next — 3 workflows
+        { name:'Broker / agent enablement',      x:200, y:290, color:'var(--teal)',   anchor:'start', body:'Cross-sell prompts, account intelligence, market briefings. Sequence the platform; the value is in the breadth of integrated context surfaced inside the producer workflow.' },
+        { name:'Commercial RFP response',        x:280, y:335, color:'var(--teal)',   anchor:'start', body:'Retrieval-augmented generation across underwriting policies, prior submissions, coverage forms. Sequence platforms with the proprietary content substrate; high impact on win rate against captive markets.' },
+        { name:'Lapse / churn risk scoring',     x:180, y:395, color:'var(--teal)',   anchor:'start', body:'Pattern recognition with adoption gap — the score is only as useful as the action it triggers in the producer workflow.' },
+        // Build & Defend — 3 workflows
+        { name:'Cross-sell to commercial',       x:475, y:105, color:'var(--blue)',   anchor:'start', body:'Multi-product, multi-stakeholder, judgment-intensive. The 74/32 pilot result lands here: same model, different architecture, different escalation rate. Build the semantic substrate.' },
+        { name:'Underwriting assistance',        x:560, y:155, color:'var(--blue)',   anchor:'end',   body:'Risk classification with regulatory error cost. Crossing the hurdle requires fidelity improvement (proprietary loss data, hybrid SLM fine-tuning) — not cheaper inference.' },
+        { name:'Complex claims advisory',        x:385, y:205, color:'var(--blue)',   anchor:'start', body:'High signal threshold, high error cost, longitudinal context required. The architectural answer is integrated platform context across policy, claim history, agent, SLA, escalation rules — read in one cycle, not 8–12 hops.' },
+        // Protect & Invest — 2 workflows
+        { name:'Specialty underwriting',         x:180, y:110, color:'var(--amber)',  anchor:'start', body:'Catastrophic-risk, syndicated, idiosyncratic. Far from the hurdle. Capital goes into the underwriter substrate — submission data, peril modeling, market intelligence.' },
+        { name:'Reinsurance strategy',           x:245, y:175, color:'var(--amber)',  anchor:'start', body:'Treaty negotiation, capital structure decisions. Strategic and irreducibly judgment-intensive. AI augments the data preparation, not the decision.' }
+      ]
+    },
+    medtech: {
+      name: 'Medtech',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Service contract renewal',       x:485, y:290, color:'var(--purple)', anchor:'start', label:'Service contract renewal', body:'Recurring transactional revenue motion. High volume, structured. Net retention amplification is meaningful at scale.' },
+        { name:'Field service routing',          x:570, y:333, color:'var(--purple)', anchor:'end',   label:'Field service routing', body:'Optimization with clear constraints (technician skills, parts availability, SLA). Below the hurdle on integrated FSM platforms.' },
+        { name:'Standard order configuration',   x:425, y:365, color:'var(--purple)', anchor:'start', label:'Order config assist', body:'SKU-bounded configuration with rule-governed compatibility. Below the hurdle when product master data is clean.' },
+        { name:'Service ticket triage',          x:548, y:404, color:'var(--purple)', anchor:'end',   label:'Service ticket triage', body:'Severity scoring, parts identification, technician dispatch. Structured intake, large training data. Below the hurdle today.' },
+        // Sequence Next — 3 workflows
+        { name:'Sales rep call planning',        x:215, y:290, color:'var(--teal)',   anchor:'start', label:'Sales rep call planning', body:'HCP segmentation, account history, clinical evidence pairing. Sequence platforms that integrate clinical evidence libraries with rep workflow.' },
+        { name:'Standard CPQ',                   x:292, y:330, color:'var(--teal)',   anchor:'start', label:'Standard CPQ', body:'Bundled solution configuration is structured but exception-prone. Sequence carefully — adoption depends on rep trust in the configuration logic.' },
+        { name:'Service contract NRR scoring',   x:180, y:390, color:'var(--teal)',   anchor:'start', label:'Service contract NRR', body:'Health scoring across service utilization, response times, and renewal signals. Sequence platforms with integrated FSM and CRM data — the amplification is on retention.' },
+        // Build & Defend — 4 workflows
+        { name:'Capital equipment CPQ',          x:500, y:110, color:'var(--blue)',   anchor:'start', label:'Capital equipment CPQ', body:'The flagship medtech revenue intelligence workflow. Multi-million-dollar deals, multi-stakeholder buying, regulatory complexity. The amplification economics depend on proprietary configuration logic and clinical evidence pairing.' },
+        { name:'Clinical evidence packaging',    x:610, y:155, color:'var(--blue)',   anchor:'end',   label:'Clinical evidence', body:'Tailoring evidence to specific HCP profile and procedure. High signal threshold, high error cost (regulatory). Build the proprietary clinical corpus.' },
+        { name:'Bundled solution pricing',       x:425, y:185, color:'var(--blue)',   anchor:'start', label:'Bundled solution pricing', body:'Multi-product, contract-mix complexity, margin sensitivity. Path to clearing the hurdle runs through deal data and pricing analytics — not through cheaper inference.' },
+        { name:'Territory planning',             x:565, y:215, color:'var(--blue)',   anchor:'end',   label:'Territory planning', body:'Data-rich but judgment-intensive — clinical opportunity, account access, rep capacity. The moat is the integrated planning history across cycles.' },
+        // Protect & Invest — 2 workflows
+        { name:'KOL engagement strategy',        x:180, y:110, color:'var(--amber)',  anchor:'start', label:'KOL engagement strategy', body:'Long-cycle, relationship-led, judgment-intensive. Far from the hurdle. The substrate matters — KOL profiles, engagement history, publication pipelines.' },
+        { name:'New product introduction',       x:250, y:175, color:'var(--amber)',  anchor:'start', label:'New product launch', body:'Strategic launch decisions across stakeholders, regulators, payers. Strategic and irreducibly judgment-intensive.' }
+      ]
+    },
+    pharma: {
+      name: 'Pharma',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Sample / literature distribution',x:475, y:290, color:'var(--purple)', anchor:'start', body:'Compliance-bounded, transactional. Below the hurdle on integrated CRM platforms. Net adoption impact via streamlined rep experience.' },
+        { name:'HCP coverage planning',          x:565, y:325, color:'var(--purple)', anchor:'end',   body:'Segmentation, frequency, channel mix. Structured optimization problem with clear data inputs.' },
+        { name:'Conference & speaker logistics', x:420, y:365, color:'var(--purple)', anchor:'start', body:'Event coordination, speaker engagement tracking, follow-up sequencing. Structured operational workflow. Below the hurdle today.' },
+        { name:'Material distribution tracking', x:560, y:405, color:'var(--purple)', anchor:'end',   body:'Compliance-tracked content delivery, MLR audit trail, rep-level inventory. Structured, auditable. Below the hurdle today.' },
+        // Sequence Next — 2 workflows
+        { name:'Sales rep next-best-action',     x:215, y:295, color:'var(--teal)',   anchor:'start', body:'Capability is arriving but adoption gap is the binding constraint. The score is only as useful as rep trust in the recommendation. Sequence platforms with strong call planning UX.' },
+        { name:'KOL relationship mapping',       x:280, y:365, color:'var(--teal)',   anchor:'start', body:'Network analysis across publication, speaker, and engagement data. Sequence platforms with the proprietary KOL substrate already in place.' },
+        // Build & Defend — 4 workflows
+        { name:'MLR-approved content selection', x:475, y:100, color:'var(--blue)',   anchor:'start', body:'Regulatory error cost (FDA, EMA). Multi-modality content matched to HCP profile and call objective. Build & Defend; the substrate is the proprietary MLR-approved library.' },
+        { name:'Medical inquiry response',       x:560, y:140, color:'var(--blue)',   anchor:'end',   body:'Regulated, judgment-intensive, error cost is regulatory and reputational. Path to clearing the hurdle runs through proprietary medical content corpora and approved response patterns.' },
+        { name:'Real-world evidence positioning',x:395, y:180, color:'var(--blue)',   anchor:'start', body:'High-judgment, longitudinal data integration, payer-facing. The amplification economics depend on RWE data quality and outcomes-evidence pairing.' },
+        { name:'Territory & call-plan alignment',x:545, y:215, color:'var(--blue)',   anchor:'end',   body:'Cross-cycle alignment across rep capacity, HCP opportunity, and brand priority. Data-rich but judgment-intensive. Build the proprietary planning substrate.' },
+        // Protect & Invest — 2 workflows
+        { name:'Brand positioning strategy',     x:180, y:110, color:'var(--amber)',  anchor:'start', body:'Multi-year, multi-stakeholder, irreducibly strategic. Far from the hurdle. Capital goes into the substrate (RWE, claims data, patient journey) that AI will eventually augment.' },
+        { name:'Pricing & access strategy',      x:245, y:175, color:'var(--amber)',  anchor:'start', body:'Adversarial payer negotiations, country-specific reimbursement, lifecycle complexity. Strategic and judgment-intensive.' }
+      ]
+    },
+    payer: {
+      name: 'Health payer',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Member acquisition lead routing',x:500, y:288, color:'var(--purple)', anchor:'start', label:'Lead routing', body:'Structured matching of inbound prospects to broker channels. Below the hurdle on integrated platforms.' },
+        { name:'Group renewal recommendations',  x:567, y:325, color:'var(--purple)', anchor:'end',   label:'Group renewal', dx:-12, dy:2, body:'Pattern recognition across utilization, satisfaction, market dynamics. Net retention amplification is the value driver.' },
+        { name:'Premium billing inquiries',      x:430, y:365, color:'var(--purple)', anchor:'start', label:'Billing inquiries', dx:12, dy:-2, body:'Rule-bound, well-bounded service workflow. Below the hurdle on integrated platforms with native billing data context.' },
+        { name:'Standard prior authorization',   x:547, y:404, color:'var(--purple)', anchor:'end',   label:'Standard prior auth', dx:-12, dy:4, body:'Rule-bound prior auth (clinical guidelines + benefit logic). Below the hurdle for the rule-bound segment; complex auths remain Build & Defend.' },
+        // Sequence Next — 3 workflows
+        { name:'Broker enablement',              x:215, y:290, color:'var(--teal)',   anchor:'start', label:'Broker enablement', body:'Cross-sell across medical, dental, vision, ancillary. Sequence platforms that integrate broker workflow with proprietary product context.' },
+        { name:'Member disenrollment risk',      x:286, y:336, color:'var(--teal)',   anchor:'start', label:'Member churn risk', body:'Pattern recognition across utilization, satisfaction, life events, and competitive market signals. Sequence platforms that close the loop into retention outreach.' },
+        { name:'Care management outreach',       x:180, y:395, color:'var(--teal)',   anchor:'start', label:'Care management outreach', body:'Member-level prioritization with care team adoption gap. The score must integrate with care manager workflow to clear the hurdle.' },
+        // Build & Defend — 3 workflows
+        { name:'Risk-adjusted pricing',          x:475, y:105, color:'var(--blue)',   anchor:'start', label:'Risk-adjusted pricing', body:'Actuarial, regulatory, multi-state complexity. Build & Defend on the proprietary actuarial data substrate.' },
+        { name:'Specialty network strategy',     x:560, y:155, color:'var(--blue)',   anchor:'end',   label:'Specialty network', body:'High-stakes provider contracting decisions. Multi-stakeholder, longitudinal, regulatory. Path to clearing the hurdle runs through fidelity in network performance data.' },
+        { name:'Population health prioritization',x:395, y:205, color:'var(--blue)',  anchor:'start', label:'Population health', body:'Cohort identification across clinical, claims, social determinants data. The amplification economics depend on data integration depth.' },
+        // Protect & Invest — 2 workflows
+        { name:'Benefit design',                 x:180, y:110, color:'var(--amber)',  anchor:'start', label:'Benefit design', body:'Strategic, multi-year, regulatory. Far from the hurdle. Capital goes into the analytics substrate that informs design choices.' },
+        { name:'Provider contracting strategy',  x:245, y:175, color:'var(--amber)',  anchor:'start', label:'Provider contracting strategy', body:'Adversarial negotiations, long-cycle, market-position-dependent. Strategic and irreducibly judgment-intensive.' }
+      ]
+    },
+    cpg: {
+      name: 'Consumer goods manufacturing',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Customer service to retailers',  x:495, y:290, color:'var(--purple)', anchor:'start', label:'Retailer service', body:'Order status, dispute resolution, replenishment queries. Structured, high-volume B2B service. Below the hurdle on integrated platforms.' },
+        { name:'Pricing & promotion analytics',  x:572, y:327, color:'var(--purple)', anchor:'end',   label:'Promo analytics', dx:-12, dy:2, body:'Pattern recognition across syndicated POS data and trade promotion outcomes. Below the hurdle when the data substrate is in place.' },
+        { name:'Order management',               x:432, y:372, color:'var(--purple)', anchor:'start', label:'Order mgmt', dx:12, dy:4, body:'Order entry, status updates, exception handling. Structured, high-volume, native ERP integration. Below the hurdle today.' },
+        { name:'POS data summarization',         x:552, y:404, color:'var(--purple)', anchor:'end',   label:'POS summaries', dx:-12, dy:4, body:'Synthesis across syndicated POS feeds (IRI, NielsenIQ) into account-level briefings. High volume, well-bounded structure.' },
+        // Sequence Next — 3 workflows
+        { name:'Demand sensing',                 x:215, y:290, color:'var(--teal)',   anchor:'start', label:'Demand sensing', body:'Short-cycle forecasting blending POS, weather, social signals. Sequence platforms with the integrated data substrate; the moat is in data breadth.' },
+        { name:'Retailer health / churn risk',   x:290, y:335, color:'var(--teal)',   anchor:'start', label:'Retailer churn risk', body:'Account-level health across order velocity, returns, dispute volume, and category mix. Sequence platforms that close the loop into account team outreach — the score is only as useful as the action it triggers.' },
+        { name:'Joint business planning',        x:180, y:395, color:'var(--teal)',   anchor:'start', label:'Joint business planning', body:'Account-specific planning with retailer-shared data. Sequence platforms that integrate retailer collaboration data with internal sales planning.' },
+        // Build & Defend — 3 workflows
+        { name:'Trade promotion optimization',   x:475, y:105, color:'var(--blue)',   anchor:'start', label:'Trade promotion optimization', body:'Multi-account, multi-product, lift-uncertainty, ROI-sensitive. Build & Defend; the moat is in the proprietary lift modeling data and retailer relationship history.' },
+        { name:'Category management advisory',   x:560, y:155, color:'var(--blue)',   anchor:'end',   label:'Category management', body:'Retailer-facing strategic role; advisor to the buyer. High signal threshold, longitudinal data, multi-stakeholder.' },
+        { name:'New product introduction',       x:395, y:205, color:'var(--blue)',   anchor:'start', label:'New product launch', body:'Launch sizing, channel allocation, retailer acceptance modeling. The amplification economics depend on launch data corpora.' },
+        // Protect & Invest — 2 workflows
+        { name:'Brand portfolio strategy',       x:180, y:110, color:'var(--amber)',  anchor:'start', label:'Brand portfolio strategy', body:'Multi-year, M&A-adjacent, strategic. Far from the hurdle. Capital goes into market intelligence substrate.' },
+        { name:'Channel strategy',               x:245, y:175, color:'var(--amber)',  anchor:'start', label:'Channel strategy', body:'Multi-channel architecture decisions. Strategic and irreducibly judgment-intensive.' }
+      ]
+    },
+    media: {
+      name: 'Media',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Subscriber activity logging',    x:570, y:290, color:'var(--purple)', anchor:'end',   body:'Pure transactional capture across iPlayer, Sounds, OTT platforms, and digital products. Below the hurdle on Salesforce Media Cloud and equivalents — high volume, well-bounded events.' },
+        { name:'Ad campaign performance tracking',x:420, y:320, color:'var(--purple)', anchor:'start', body:'Cross-platform campaign reporting against rate cards and delivered impressions. Structured analytics; below the hurdle on integrated ad ops platforms.' },
+        { name:'Content metadata enrichment',    x:550, y:365, color:'var(--purple)', anchor:'end',   body:'Tagging, taxonomy, rights metadata, audience codes. High volume, well-bounded categorization. Below the hurdle today on platforms with content data substrate.' },
+        { name:'Audience segment routing',       x:400, y:405, color:'var(--purple)', anchor:'start', body:'Match audience signal to programming, ad slot, or subscription offer. Structured matching; below the hurdle on platforms with native segment models.' },
+        // Sequence Next — 3 workflows
+        { name:'Subscriber / viewer churn prediction',x:215, y:290, color:'var(--teal)', anchor:'start', body:'Pattern recognition across engagement, content consumption, and life-event signals. Sequence platforms that integrate the score with retention outreach — the score is only as useful as the action.' },
+        { name:'Programmatic ad targeting',      x:290, y:335, color:'var(--teal)',   anchor:'start', body:'Yield optimization across inventory and segments. Capability is arriving but adoption depends on yield-team trust in model decisions. Sequence the integrated audience-and-inventory substrate.' },
+        { name:'Cross-platform audience analytics',x:180, y:395, color:'var(--teal)', anchor:'start', body:'Multi-source synthesis across linear, OTT, web, mobile. Sequence platforms with integrated identity resolution — the moat is the data graph, not the model.' },
+        // Build & Defend — 3 workflows
+        { name:'Ad inventory yield management',  x:475, y:105, color:'var(--blue)',   anchor:'start', body:'High-stakes pricing across linear, digital, and programmatic. Multi-stakeholder, regulatory in some markets. Build & Defend; the moat is the proprietary yield history and forecast accuracy.' },
+        { name:'Subscription pricing & packaging',x:560, y:155, color:'var(--blue)',  anchor:'end',   body:'Bundle architecture, tier design, geographic price discrimination. Fiduciary error cost (regulatory in some markets). Path to clearing the hurdle is in the proprietary subscriber elasticity data.' },
+        { name:'Content recommendation at scale',x:395, y:205, color:'var(--blue)',   anchor:'start', body:'Engagement engine for OTT/streaming; multi-armed bandit over a large catalog. The amplification economics depend on watch-time data quality and content metadata depth.' },
+        // Protect & Invest — 2 workflows
+        { name:'Editorial / programming strategy',x:180, y:110, color:'var(--amber)', anchor:'start', body:'Irreducibly judgment-intensive. Multi-stakeholder, brand-defining, market-position-dependent. Far from the hurdle; AI augments research and audience analysis, not the editorial decision.' },
+        { name:'Rights & syndication strategy',  x:245, y:175, color:'var(--amber)',  anchor:'start', body:'Adversarial multi-rights-holder negotiations, long-cycle, market-position-dependent. Strategic and irreducibly judgment-intensive.' }
+      ]
+    },
+    hightech: {
+      name: 'High tech',
+      workflows: [
+        // Automate Now — 4 workflows
+        { name:'Product telemetry / activity logging',x:580, y:285, color:'var(--purple)', anchor:'end',   body:'Pure transactional capture across product touchpoints (UKG/Amplitude class). Below the hurdle on platforms with product analytics native to the CRM.' },
+        { name:'Trial-to-paid conversion scoring',x:420, y:315, color:'var(--purple)', anchor:'start', body:'Behavioral signal scoring on trial users. Clear, high-volume, well-bounded labels. Below the hurdle on PLG platforms with integrated CRM and product analytics.' },
+        { name:'License utilization tracking',   x:550, y:355, color:'var(--purple)', anchor:'end',   body:'Seat/feature/consumption utilization across deployed accounts. Structured, high-volume, native product telemetry. Below the hurdle today on integrated platforms.' },
+        { name:'Self-serve qualification',       x:400, y:405, color:'var(--purple)', anchor:'start', body:'Inbound lead qualification across firmographic and product-fit signals. Structured matching; below the hurdle for the bounded segment.' },
+        // Sequence Next — 3 workflows
+        { name:'PLG / expansion signal scoring', x:215, y:290, color:'var(--teal)',   anchor:'start', body:'Account-level expansion signals from product usage patterns. Sequence platforms that close the loop into rep-led outreach. The amplification depends on adoption by the deal team.' },
+        { name:'Customer health / NRR scoring',  x:285, y:335, color:'var(--teal)',   anchor:'start', body:'Telemetry-driven health (Amplitude/Mixpanel-style) integrated with success motion. Sequence platforms with the substrate; net retention is the structural value driver.' },
+        { name:'Channel partner enablement',     x:180, y:395, color:'var(--teal)',   anchor:'start', body:'Partner-facing playbooks, deal registration, co-sell triggers. Sequence platforms that integrate partner workflow with internal CRM context.' },
+        // Build & Defend — 5 workflows
+        { name:'Procedural rule-based CPQ',      x:475, y:90,  color:'var(--blue)',   anchor:'start', body:'The mature CPQ architecture pattern. Rule-based configuration with explicit pricing logic, suited to catalogs with manageable combinatorial complexity. Capability is mature on modern platforms; the deployment risk is well-understood. Build the integrated substrate; the moat is in the deal corpus and contract history.' },
+        { name:'Declarative constraint CPQ',     x:570, y:125, color:'var(--blue)',   anchor:'end',   body:'Constraint-solving architecture for combinatorially complex catalogs — capital equipment configuration, telco service catalogs with thousands of dependencies, multi-product industrial bundles. The signal threshold is higher, the proprietary substrate is more valuable, and the amplification economics are stronger. Build & Defend with highest priority on the configuration corpus and constraint definition library.' },
+        { name:'Subscription renewal management',x:385, y:160, color:'var(--blue)',   anchor:'start', body:'The strategic core of enterprise SaaS revenue motions. Multi-product, multi-stakeholder, longitudinal context required. Path to clearing the hurdle runs through proprietary deal data integrated with consumption telemetry and customer success signals. Build the integrated renewal substrate; the moat is the closed-renewal corpus.' },
+        { name:'Partner co-sell orchestration',  x:550, y:195, color:'var(--blue)',   anchor:'end',   body:'Hyperscaler co-sell motions (AWS, Azure, GCP) and SI co-sell. Multi-system, judgment-intensive. The moat is in the integrated co-sell data and joint pipeline visibility.' },
+        { name:'Strategic account expansion',    x:440, y:225, color:'var(--blue)',   anchor:'start', body:'Multi-product land-and-expand strategy across enterprise accounts. The amplification economics depend on account-team adoption and proprietary deal corpora.' },
+        // Protect & Invest — 2 workflows
+        { name:'Pricing & packaging strategy',   x:180, y:110, color:'var(--amber)',  anchor:'start', body:'Consumption-vs-seat pricing, multi-cloud era margin design, bundling architecture. Far from the hurdle. Capital goes into the proprietary elasticity data substrate.' },
+        { name:'Strategic alliance / ecosystem', x:245, y:175, color:'var(--amber)',  anchor:'start', body:'Multi-year platform partnerships, ecosystem positioning, M&A-adjacent decisions. Strategic and irreducibly judgment-intensive.' }
+      ]
+    }
+  };
+
+  function renderMatrix(industryKey) {
+    const data = industries[industryKey];
+    const dotsGroup = document.getElementById('matrix-dots');
+    dotsGroup.innerHTML = '';
+    data.workflows.forEach((w, i) => {
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('class', 'dot-group');
+      g.setAttribute('data-idx', i);
+      g.setAttribute('data-industry', industryKey);
+
+      const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      c.setAttribute('cx', w.x);
+      c.setAttribute('cy', w.y);
+      c.setAttribute('r', '6');
+      c.setAttribute('fill', w.color);
+      g.appendChild(c);
+
+      const t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      const label = w.label || w.name;
+      const labelAnchor = w.labelAnchor || (w.anchor === 'end' ? 'end' : 'start');
+      const defaultDx = labelAnchor === 'end' ? -11 : 11;
+      const labelX = w.x + (typeof w.dx === 'number' ? w.dx : defaultDx);
+      const labelY = w.y + (typeof w.dy === 'number' ? w.dy : 4);
+      const size = w.fontSize || (label.length > 24 ? '9.4' : (label.length > 18 ? '9.9' : '10.5'));
+      t.setAttribute('x', labelX);
+      t.setAttribute('y', labelY);
+      t.setAttribute('font-size', size);
+      t.setAttribute('fill', 'var(--text)');
+      t.setAttribute('text-anchor', labelAnchor);
+      t.textContent = label;
+      g.appendChild(t);
+
+      g.addEventListener('click', () => {
+        document.getElementById('dot-title').textContent = data.name + ' — ' + w.name;
+        document.getElementById('dot-body').textContent = w.body;
+      });
+      dotsGroup.appendChild(g);
+    });
+    document.getElementById('dot-title').textContent = data.name + ' — click a workflow';
+    document.getElementById('dot-body').textContent = 'Each workflow is placed by signal threshold (vertical) and position on the token efficiency curve (horizontal). The hurdle frontier is the WACC-adjusted ROIC threshold for revenue programs (typically 2.0×). Workflows above the frontier clear the hurdle; workflows below require either fidelity improvement, semantic integration, or proprietary data investment to cross.';
+  }
+
+  document.getElementById('industry-select').addEventListener('change', e => renderMatrix(e.target.value));
+  renderMatrix('cross');
+
+  // ---------- Workflow assessor ----------
+  // Four dimensions, 1-5 scale. Pairs map to the two matrix axes:
+  //   Signal score    = (judgment + error) × 10           → 0..100, midpoint 60 at all-3s
+  //   Proximity score = (capability + economics) × 10     → 0..100, midpoint 60 at all-3s
+  const sIds = ['judgment', 'error', 'capability', 'economics'];
+  const vals = { judgment: 3, error: 3, capability: 3, economics: 3 };
+  sIds.forEach(k => {
+    const slider = document.getElementById('s-'+k);
+    const out = document.getElementById('v-'+k);
+    slider.addEventListener('input', () => {
+      vals[k] = +slider.value;
+      out.textContent = vals[k];
+      compute();
+      clearActivePreset();
+    });
+  });
+
+  // Revenue intelligence presets — values 1-5 across the four dimensions
+  // Quadrant landings (Signal score / Proximity score):
+  //   Automate Now    = signal < 50, proximity >= 50
+  //   Sequence Next   = signal < 50, proximity < 50
+  //   Build & Defend  = signal >= 50, proximity >= 50
+  //   Protect & Invest = signal >= 50, proximity < 50
+  const presets = {
+    activity:  { judgment: 1, error: 1, capability: 5, economics: 5 }, //  20 / 100  — Automate Now
+    lead:      { judgment: 1, error: 2, capability: 5, economics: 5 }, //  30 / 100  — Automate Now
+    invoice:   { judgment: 1, error: 1, capability: 4, economics: 5 }, //  20 /  90  — Automate Now (billing)
+    txnquote:  { judgment: 2, error: 2, capability: 2, economics: 2 }, //  40 /  40  — Sequence Next (simple/transactional CPQ)
+    convo:     { judgment: 2, error: 1, capability: 2, economics: 1 }, //  30 /  30  — Sequence Next
+    health:    { judgment: 1, error: 2, capability: 2, economics: 2 }, //  30 /  40  — Sequence Next
+    subbill:   { judgment: 1, error: 1, capability: 2, economics: 2 }, //  20 /  40  — Sequence Next (billing/metering)
+    forecast:  { judgment: 4, error: 4, capability: 3, economics: 3 }, //  80 /  60  — Build & Defend
+    nba:       { judgment: 4, error: 3, capability: 3, economics: 3 }, //  70 /  60  — Build & Defend
+    proccpq:   { judgment: 4, error: 4, capability: 4, economics: 3 }, //  80 /  70  — Build & Defend (procedural rule-based CPQ — capability mature)
+    declcpq:   { judgment: 5, error: 4, capability: 3, economics: 3 }, //  90 /  60  — Build & Defend (declarative constraint CPQ — higher signal)
+    subrenew:  { judgment: 4, error: 4, capability: 3, economics: 4 }, //  80 /  70  — Build & Defend (subscription renewal)
+    leakage:   { judgment: 4, error: 5, capability: 3, economics: 3 }, //  90 /  60  — Build & Defend (revenue leakage)
+    dealprice: { judgment: 5, error: 5, capability: 3, economics: 4 }, // 100 /  70  — Build & Defend (pricing — EBITDA lever)
+    strategy:  { judgment: 5, error: 5, capability: 2, economics: 2 }  // 100 /  40  — Protect & Invest
+  };
+
+  window.loadPreset = function(key, btn) {
+    const p = presets[key];
+    sIds.forEach(k => {
+      vals[k] = p[k];
+      document.getElementById('s-'+k).value = p[k];
+      document.getElementById('v-'+k).textContent = p[k];
+    });
+    compute();
+    document.querySelectorAll('.presets button').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+  };
+
+  function clearActivePreset() {
+    document.querySelectorAll('.presets button').forEach(b => b.classList.remove('active'));
+  }
+
+  function compute() {
+    // Map 1-5 inputs to 0-100 scores. Avg of two dimensions × 20 keeps midpoint at 60 for all-3s.
+    const signalScore    = Math.round(((vals.judgment + vals.error) / 2) * 20);
+    const proximityScore = Math.round(((vals.capability + vals.economics) / 2) * 20);
+
+    // Quadrant placement: split at 50 on each axis
+    let quadKey, decisionName, decisionText;
+    if (signalScore < 50 && proximityScore >= 50) {
+      quadKey = 'automate';
+      decisionName = 'Automate now';
+      decisionText = 'Deploy AI agents to this workflow immediately. Begin with the highest-volume, most standardized instances. Track adoption and downstream conversion lift, not just throughput. Reinvest amplification capture into the proprietary data moat that protects adjacent workflows. The capital deployment window is 0–6 months — every quarter of delay leaves measurable lift uncaptured.';
+    } else if (signalScore < 50 && proximityScore < 50) {
+      quadKey = 'sequence';
+      decisionName = 'Sequence next';
+      decisionText = 'Capability arrives within 24 months — preparation work happens now, not later. Allocate to workflow standardization, integration scaffolding, and seller adoption infrastructure. Begin vendor evaluation now so deployment is ready the day economics turn favorable. The capital deployment window is 12–24 months — readiness work, not payback work, and not a permission to wait.';
+    } else if (signalScore >= 50 && proximityScore >= 50) {
+      quadKey = 'build';
+      decisionName = 'Build & defend';
+      decisionText = 'Amplification capability is approaching this signal threshold. Capital priority is the proprietary substrate — deal data, customer context, semantic integration — that lifts fidelity and dampens misguidance. Build the seller adoption infrastructure now so amplification capture starts the day capability lands. The capital deployment window is 24–48 months — the period in which capability and economics turn favorable, not a payback period.';
+    } else {
+      quadKey = 'protect';
+      decisionName = 'Protect & invest';
+      decisionText = 'Far from the hurdle. The token efficiency curve has not yet reached this signal threshold. Maintain seller and advisor investment; deepen domain expertise. Strategic priority is identifying and protecting the proprietary data assets embedded in the workflow — they become structural moat when amplification capability eventually arrives. The capital deployment window is 36+ months — preserve human capital advantage in the meantime.';
+    }
+
+    // Update score values
+    document.getElementById('s-score').textContent = signalScore;
+    document.getElementById('p-score').textContent = proximityScore;
+
+    // Highlight active quadrant card; dim the others
+    ['automate', 'build', 'sequence', 'protect'].forEach(k => {
+      document.getElementById('quad-' + k).classList.toggle('active', k === quadKey);
+    });
+
+    // Decision name and explanation
+    document.getElementById('decision-name').textContent = decisionName;
+    document.getElementById('decision-text').textContent = decisionText;
+  }
+  compute();
+})();
+</script>
+</body>
+</html>
